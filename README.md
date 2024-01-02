@@ -3,7 +3,7 @@ Hearts C++ card game:
 Fun card game that a user can play against 3 computers. Good luck!
 
 To play:
-1. main.cpp can be compiled and ran directly.
+1. main.cpp can be compiled and ran directly. All of the included files must be in the same folder location.
 2. User will be player 1.
 3. Each player is dealt 13 cards.
 4. Player with 2 of CLUBS begins game.
