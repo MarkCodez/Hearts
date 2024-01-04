@@ -352,19 +352,20 @@ void scoreBoard(PlayerClass players[]) {
 
 void revealWinner(PlayerClass players[]) {
   int minVal = players[0].GetScore();
-  int index;
+  int index = 0;
 
-  for (int x = 0; x < numPlayers; x++) {
+  for (int x = 1; x < numPlayers; x++) {
     if (players[x].GetScore() < minVal) {
       minVal = players[x].GetScore();
       index = x;
     }
   }
+
   if (index == 0) {
     cout << "You are the winner with " << players[index].GetScore()
          << " points!" << endl;
   } else {
-    cout << "Computer " << index << " is the winner with "
+    cout << "Computer " << index % 4 << " is the winner with "
          << players[index].GetScore() << " points!" << endl;
   }
 }
